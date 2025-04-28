@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'noubouwufridda-7998@yopmail.com'</initValue>
+      <name>valid_email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Test1234!'</initValue>
+      <name>valid_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'test2123@yopmail.com'</initValue>
+      <name>invalid_email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Test12512!'</initValue>
+      <name>invalid_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://naveenautomationlabs.com/opencart/index.php?'</initValue>
+      <name>Url</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
