@@ -1,0 +1,3 @@
+﻿testType;username;password;expectedErrorMessage;testDescription
+P;noubouwufridda-7998@yopmail.com;Test1234!;;Login Success
+N;test2123@yopmail.com;Test12512!;;Login failed

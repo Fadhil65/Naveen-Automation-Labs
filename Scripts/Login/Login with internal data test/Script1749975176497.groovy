@@ -17,5 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFile('Include/features/Login/Login.feature')
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://naveenautomationlabs.com/opencart/index.php?')
+
+WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('home_page/My Account2'))
+
+WebUI.click(findTestObject('home_page/My Account2'))
+
+WebUI.click(findTestObject('home_page/Login'))
+
+WebUI.sendKeys(findTestObject('Login/field_email'), username)
+
+WebUI.sendKeys(findTestObject('Login/field_password'), password)
+
+WebUI.click(findTestObject('Login/btn_login'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1, FailureHandling.STOP_ON_FAILURE)
+
+if (testType == 'P') {
+    WebUI.waitForElementVisible(findTestObject('My_Account/Text_box_Edit_account'), 0)
+	WebUI.verifyElementVisible(findTestObject('My_Account/Text_box_Edit_account'), FailureHandling.STOP_ON_FAILURE)
+} else {
+	WebUI.waitForElementVisible(findTestObject('Login/validation_login_class'), 0)
+    WebUI.verifyElementPresent(findTestObject('Login/validation_login_class'), 0)
+}
+
+WebUI.closeBrowser()
 

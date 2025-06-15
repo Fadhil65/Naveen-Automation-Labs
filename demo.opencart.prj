@@ -4,9 +4,12 @@
    <name>demo.opencart</name>
    <tag></tag>
    <UUID>0b91bf14-ae18-45a7-9408-48ce03e46550</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>10.2.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\Fadhil\Katalon Studio\demo.opencart\demo.opencart.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\Asus\Github\Naveen-Automation-Labs\demo.opencart.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

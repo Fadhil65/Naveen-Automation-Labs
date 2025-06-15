@@ -4,5 +4,6 @@
    <name>Login</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f6884d1f-7dfa-4e01-af31-7c0725b2729b</testCaseGuid>
 </TestCaseEntity>

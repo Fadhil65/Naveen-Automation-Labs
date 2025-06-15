@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "9ECB2128E3FC83BE4EFE319BDF0311DD",
+  "keywordClasses": [
+    {
+      "name": "utilities",
+      "keywordMethods": [
+        {
+          "name": "randomInt",
+          "parameters": [
+            {
+              "name": "length",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

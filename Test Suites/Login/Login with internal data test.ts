@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Login with internal data test</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>8ccb89ec-4e85-4c08-a208-7dac196f2e5e</testSuiteGuid>
+   <testCaseLink>
+      <guid>47bc9a38-3c58-4f60-a434-cfdb8a024a84</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login/Login with internal data test</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3c186bce-d411-4d9d-8f0b-dc77c3c74800</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Internal data login</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>3c186bce-d411-4d9d-8f0b-dc77c3c74800</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>testType</value>
+         <variableId>ba4ac270-87c4-4877-9bda-d15a51aa0d5e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3c186bce-d411-4d9d-8f0b-dc77c3c74800</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
+         <variableId>accad0c7-e7aa-4e1c-ade0-f9934ef2b9c5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3c186bce-d411-4d9d-8f0b-dc77c3c74800</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>0d9ff201-405a-4b80-ad3c-07b9a6ab0ff7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3c186bce-d411-4d9d-8f0b-dc77c3c74800</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expectedErrorMessage</value>
+         <variableId>50cd8f94-1859-4f59-bce2-2ec941326590</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

@@ -19,6 +19,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+
 import internal.GlobalVariable
 
 import org.openqa.selenium.WebElement
@@ -35,6 +36,8 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
+import utilities
+
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
@@ -42,6 +45,9 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+
+
+
 
 public class Login {
 
@@ -65,6 +71,8 @@ public class Login {
 
 	@When("User performs two login attempts with valid credetials and invalid credentials")
 	public void user_performs_two_login_attempts_with_valid_credetials_and_invalid_credentials() {
+
+
 		for (int i = 0; i < 2; i++) {
 			WebUI.comment("iterasi ke -${i + 1}")
 
@@ -80,14 +88,14 @@ public class Login {
 				WebUI.click(findTestObject('My_Account/Text_box_Logout'), FailureHandling.STOP_ON_FAILURE)
 				WebUI.delay(1)
 				WebUI.click(findTestObject('My_Account/Text_box_Login'), FailureHandling.STOP_ON_FAILURE)
-
 			} else {
 				// Iterasi kedua - invalid login
 				WebUI.comment("login invalid pada iterasi ke-${i + 1}")
 				WebUI.sendKeys(findTestObject('Login/field_email'), GlobalVariable.invalid_email)
-				WebUI.sendKeys(findTestObject('Login/field_password'), GlobalVariable.invalid_password)
+				WebUI.sendKeys(findTestObject('Login/field_password'), CustomKeywords.'utilities.randomInt'(7))
+
 				WebUI.click(findTestObject('Login/btn_login'), FailureHandling.STOP_ON_FAILURE)
-				
+
 
 				// Validasi error muncul
 				if (WebUI.verifyElementVisible(findTestObject('Login/validation_login'), FailureHandling.OPTIONAL)) {
@@ -98,12 +106,8 @@ public class Login {
 			}
 
 			WebUI.delay(1)
-
 		}
 
-WebUI.closeBrowser()
-
-
-		
+		WebUI.closeBrowser()
 	}
 }
